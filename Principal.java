@@ -10,7 +10,7 @@ public class Principal {
             vida ++;
             System.out.println("Vida"+ vida + "\t¿Cual es el numero secreto? ");
             rp = Input.nextInt();
-            if (rp == 1234)
+            if (rp == 4321)
                 fl = true;
             }while(vida < 3 && !fl );
             if (fl == true)
