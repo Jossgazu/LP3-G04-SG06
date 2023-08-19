@@ -14,11 +14,20 @@ public class Principal {
             if (rp == 1234)
                 fl = true;
         } while (vida < 3 && !fl );
+<<<<<<< HEAD
         if (fl == true)
             System.out.println("Ganaste un viaje😁👍!!!!");
         else
+=======
+        if (fl == true) {
+            System.out.println("Adivinaste!!!!");
+            String regalo = Regalo.elegir(vida);
+            System.out.println("Ganaste: "+ regalo);
+        } else {
+>>>>>>> rama2
             System.out.println("ups, perdiste...");
-        
+        }
     }
 
 }
+
