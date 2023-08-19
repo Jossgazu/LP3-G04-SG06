@@ -12,7 +12,7 @@ public class Principal {
             rp = Input.nextInt();
             if (rp == 4321)
                 fl = true;
-            }while(vida < 3 && !fl );
+            }while(vida < 5 && !fl );
             if (fl == true)
                 System.out.println("Adivinaste!!!!! ");
             else
