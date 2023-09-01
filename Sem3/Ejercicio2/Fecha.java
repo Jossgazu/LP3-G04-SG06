@@ -358,7 +358,7 @@ public class Fecha{
     }
 
     public static Boolean igualQue(Fecha fecha1, Fecha fecha2) {
-        if (fecha1.dia == fecha2.dia && fecha1.mes == fecha2.mes && fecha1.año == fecha2.año){
+        if (fecha1.dia - fecha2.dia == 0 && fecha1.mes - fecha2.mes == 0 && fecha1.año - fecha2.año == 0){
             return true;
         } else {
             return false;
