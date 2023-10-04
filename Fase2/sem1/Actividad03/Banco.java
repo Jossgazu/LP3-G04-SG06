@@ -51,22 +51,7 @@ public class Banco {
             }
         }
         return false;
-        // int position = 0;
-        // Persona[] var3 = this.clientes;
-        // int var4 = var3.length;
-  
-        // for(int var5 = 0; var5 < var4; ++var5) {
-        //    Persona pi = var3[var5];
-        //    if (pi.equals(persona)) {
-        //       System.out.println("persona encontrada en clientes \n posicion :" + position);
-        //       return position - 1;
-        //    }
-  
-        //    ++position;
-        // }
-  
-        // System.out.println(">No se encontro la posicion retornando 0");
-        // return position;
+        
     }
     public void clientesTipo (char tipo ){
         for (int i = 0; i < clientes.length; i++) {

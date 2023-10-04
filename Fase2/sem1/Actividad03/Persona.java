@@ -70,15 +70,6 @@ public class Persona {
         return tipoCuenta + numero;
     }
 
-    // public boolean equals(Object obj) {
-    //     if (obj instanceof Persona p) {
-    //        return this.cuenta.equals(p.cuenta);
-    //     } else {
-    //        System.out.println("No es una instancia de persona");
-    //        return false;
-    //     }
-    //  }
-
 
 
     @Override

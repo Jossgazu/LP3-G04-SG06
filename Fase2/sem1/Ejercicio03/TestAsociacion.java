@@ -20,21 +20,5 @@ public class TestAsociacion {
 
         // System.out.println(bbva);
 
-    //   Banco[] clientesa = new Banco[4];
-    //   Persona persona1 = new Persona(1,"Juan0", "Perez");
-    //   Persona persona2 = new Persona(2,"Juan1", "Perez");
-    //   Persona persona3 = new Persona(3,"Juan2", "Perez");
-    //   Persona persona4 = new Persona(4,"Juan3", "Perez");
-    //   clientesa[0] = persona1;
-    //   clientesa[1] = persona2;
-    //   clientesa[2] = persona3;
-    //   clientesa[3] = persona4;
-    //   Banco b = new Banco("bcp", clientesa);
-    //   Persona busca = new Persona(13);
-    //   System.out.println(b.buscarCliente(busca));
-    //   System.out.println(persona1);
-    //   System.out.println(persona2);
-    //   System.out.println(persona3);
-    //   System.out.println(persona4);
    }
 }
