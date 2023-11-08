@@ -6,10 +6,6 @@ import javax.swing.SwingConstants; // constantes comunes utilizadas con Swing
 import javax.swing.Icon; // interfaz utilizada para manipular imágenes
 import javax.swing.ImageIcon; // carga las imágenes
 
-
-
-
-
 public class LabelFrame extends JFrame
 {
     private JLabel etiqueta1; // JLabel sólo con texto
