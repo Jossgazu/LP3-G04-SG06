@@ -7,40 +7,40 @@
  import javax.swing.JFrame;
  import javax.swing.JButton;
  
- public class MarcoFlowLayout extends JFrame 
- {
- private final JButton botonJButtonIzquierda; // botón para establecer la ineación a la izquierda
- private final JButton botonJButtonCentro; // botón para establecer la ineación al centro
- private final JButton botonJButtonDerecha; // botón para establecer la ineación a la derecha
- private final FlowLayout esquema; // objeto esquema
- private final Container contenedor; // contenedor para establecer el esquema
- 
- // establece la GUI y registra los componentes de escucha de botones
- public MarcoFlowLayout()
- {
- super("Josse Manuel Gallegos Zuñiga && Ricardo Gabriel Manrique Silva");
- 
- esquema = new FlowLayout();
- contenedor = getContentPane(); // obtiene contenedor para esquema
- setLayout(esquema);
+public class MarcoFlowLayout extends JFrame 
+{
+    private final JButton botonJButtonIzquierda; // botón para establecer la ineación a la izquierda
+    private final JButton botonJButtonCentro; // botón para establecer la ineación al centro
+    private final JButton botonJButtonDerecha; // botón para establecer la ineación a la derecha
+    private final FlowLayout esquema; // objeto esquema
+    private final Container contenedor; // contenedor para establecer el esquema
+    
+    // establece la GUI y registra los componentes de escucha de botones
+    public MarcoFlowLayout()
+    {
+        super("Josse Manuel Gallegos Zuñiga && Ricardo Gabriel Manrique Silva");
+        
+        esquema = new FlowLayout();
+        contenedor = getContentPane(); // obtiene contenedor para esquema
+        setLayout(esquema);
 
- // establece botonJButtonIzquierda y registra componente de escucha
- botonJButtonIzquierda = new JButton("Izquierda");
- add(botonJButtonIzquierda); // agrega botón Izquierda al marco
- botonJButtonIzquierda.addActionListener( 
- new ActionListener() // clase interna anónima
- { 
- // procesa evento de botonJButtonIzquierda
- @Override 
- public void actionPerformed(ActionEvent evento)
- {
- esquema.setAlignment(FlowLayout.LEFT);
- 
- // realinea los componentes adjuntos
- esquema.layoutContainer(contenedor);
- }
- }
- );
+        // establece botonJButtonIzquierda y registra componente de escucha
+        botonJButtonIzquierda = new JButton("Izquierda");
+        add(botonJButtonIzquierda); // agrega botón Izquierda al marco
+        botonJButtonIzquierda.addActionListener( 
+        new ActionListener() // clase interna anónima
+        { 
+        // procesa evento de botonJButtonIzquierda
+        @Override 
+        public void actionPerformed(ActionEvent evento)
+        {
+        esquema.setAlignment(FlowLayout.LEFT);
+        
+        // realinea los componentes adjuntos
+        esquema.layoutContainer(contenedor);
+    }
+    }
+);
  
  // establece botonJButtonCentro y registra componente de escucha
  botonJButtonCentro = new JButton("Centro"); 
@@ -60,22 +60,22 @@
  }
  );
  
- // establece botonJButtonDerecha y registra componente de escucha
- botonJButtonDerecha = new JButton("Derecha");
- add(botonJButtonDerecha); // agrega botón Derecha al marco
- botonJButtonDerecha.addActionListener( 
- new ActionListener() // clase interna anónima
- { 
- // procesa evento de botonJButtonDerecha
- @Override 
- public void actionPerformed(ActionEvent evento)
- {
- esquema.setAlignment(FlowLayout.RIGHT);
- 
- // realinea los componentes adjuntos
- esquema.layoutContainer(contenedor);
- }
- }
- );
- } // fin del constructor de MarcoFlowLayout
- } // fin de la clase MarcoFlowLayout
+        // establece botonJButtonDerecha y registra componente de escucha
+        botonJButtonDerecha = new JButton("Derecha");
+        add(botonJButtonDerecha); // agrega botón Derecha al marco
+        botonJButtonDerecha.addActionListener( 
+        new ActionListener() // clase interna anónima
+        { 
+            // procesa evento de botonJButtonDerecha
+            @Override 
+            public void actionPerformed(ActionEvent evento)
+            {
+            esquema.setAlignment(FlowLayout.RIGHT);
+            
+            // realinea los componentes adjuntos
+            esquema.layoutContainer(contenedor);
+            }
+        }
+    );
+    } // fin del constructor de MarcoFlowLayout
+} // fin de la clase MarcoFlowLayout
