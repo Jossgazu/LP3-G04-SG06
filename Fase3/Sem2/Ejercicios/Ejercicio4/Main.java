@@ -7,7 +7,7 @@ public class Main {
             new Producto(3, "Producto 3", 15.75)
         };
         Buscador<Producto> buscadorProducto = new Buscador<>();
-        Producto productoBuscado = new Producto(2, "", 0); // Producto a buscar por su código
+        Producto productoBuscado = new Producto(2, "", 0); 
         int posicionProducto = buscadorProducto.buscarElemento(productos, productoBuscado);
         System.out.println("Posicion del producto encontrado: " + posicionProducto);
         Persona[] personas = {
@@ -16,7 +16,7 @@ public class Main {
             new Persona("333", "Pedro", "Calle C")
         };
         Buscador<Persona> buscadorPersona = new Buscador<>();
-        Persona personaBuscada = new Persona("", "María", ""); // Persona a buscar por nombres
+        Persona personaBuscada = new Persona("", "María", "");
         int posicionPersona = buscadorPersona.buscarElemento(personas, personaBuscada);
         System.out.println("Posicion de la persona encontrada: " + posicionPersona);
         Estudiante[] estudiantes = {
@@ -26,7 +26,7 @@ public class Main {
         };
 
         Buscador<Estudiante> buscadorEstudiante = new Buscador<>();
-        Estudiante estudianteBuscado = new Estudiante("", "Laura", "", "Derecho"); // Estudiante a buscar por nombres y carrera
+        Estudiante estudianteBuscado = new Estudiante("", "Laura", "", "Derecho"); 
         int posicionEstudiante = buscadorEstudiante.buscarElemento(estudiantes, estudianteBuscado);
         System.out.println("Posicion del estudiante encontrado: " + posicionEstudiante);
     }
