@@ -1,0 +1,1 @@
+public class IsEmpty extends Exception {}

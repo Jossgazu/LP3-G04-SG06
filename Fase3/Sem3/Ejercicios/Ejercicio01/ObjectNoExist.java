@@ -1,0 +1,1 @@
+public class ObjectNoExist extends Exception {}
